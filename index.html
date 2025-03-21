@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscapelis</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Buscapelis 🎬</h1>
+    <input type="text" id="search" placeholder="Escribe el nombre de la película...">
+    <button onclick="buscar()">Buscar</button>
+
+    <script>
+        function buscar() {
+            const query = document.getElementById('search').value;
+            localStorage.setItem('searchQuery', query);
+            window.location.href = 'results.html';
+        }
+    </script>
+</body>
+</html>

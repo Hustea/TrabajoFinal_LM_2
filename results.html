@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <h1>Resultados de búsqueda</h1>
+    <div id="resultados"></div>
+
+    <!-- Botón para volver a la página principal -->
+    <button id="volver">Volver</button>
+
+    <script src="renderer.js"></script>
+    <script>
+        document.getElementById('volver').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
